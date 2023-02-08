@@ -4,15 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF3700B3"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Playlist_Maker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:text="Playlist Maker"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="369dp"
+        android:layout_height="208dp"
+
+
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="Настройки"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/tools"
+        app:iconGravity="textStart"
+        app:iconPadding="3pt"
+        app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:rippleColor="@color/white" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="369dp"
+        android:layout_height="208dp"
+
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/abeezee"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Поиск"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/search"
+        app:iconGravity="textStart"
+        app:iconPadding="3pt"
+
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/media"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/white" />
+
+    <Button
+        android:id="@+id/media"
+        android:layout_width="369dp"
+        android:layout_height="208dp"
+
+
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/abeezee"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Медиатека"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/media"
+        app:iconGravity="textStart"
+        app:iconPadding="3pt"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
