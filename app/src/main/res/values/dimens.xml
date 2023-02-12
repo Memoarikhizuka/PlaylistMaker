@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_horisontal_margin_16">16dp</dimen>
+    <dimen name="default_bottom_margin_16">16dp</dimen>
+    <dimen name="text_viev_padding_top_21">21dp</dimen>
+    <dimen name="text_viev_padding_top_16">16dp</dimen>
+    <dimen name="text_viev_padding_bottom_21">21dp</dimen>
+    <dimen name="text_viev_padding_bottom_16">16dp</dimen>
+
+    <dimen name="text_view_padding_start_setting_activity_16">16dp</dimen>
+    <dimen name="text_view_padding_end_setting_activity_21">21dp</dimen>
+    <dimen name="text_size_setting_activity_text_view_20sp">20sp</dimen>
+</resources>

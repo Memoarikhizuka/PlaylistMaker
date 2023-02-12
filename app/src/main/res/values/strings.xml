@@ -5,4 +5,8 @@
     <string name="Black_Theme">Тёмная тема</string>
     <string name="writeToSupport">Написать в поддержку</string>
     <string name="UserAgreement">Пользовательское соглашение</string>
+    <string name="Settings">Настройки</string>
+    <string name="playlist_maker">Playlist Maker</string>
+    <string name="Search">Поиск</string>
+    <string name="Mediatek">Медиатека</string>
 </resources>
