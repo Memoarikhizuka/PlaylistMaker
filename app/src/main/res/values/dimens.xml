@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="default_horisontal_margin_16">16dp</dimen>
+    <dimen name="default_layout_margin_top_14">14dp</dimen>
     <dimen name="default_bottom_margin_16">16dp</dimen>
     <dimen name="text_viev_padding_top_21">21dp</dimen>
     <dimen name="text_viev_padding_top_16">16dp</dimen>
