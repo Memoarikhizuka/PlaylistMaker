@@ -9,29 +9,28 @@
 
     <ImageView
         android:id="@+id/arowblack"
-        android:layout_width="27dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:tint="@color/setting_screen_icon_color"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/arowblack"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arowblack"/>
 
     <TextView
-
         android:id="@+id/Setting_Activity_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/default_layout_margin_top_14"
-        android:fontFamily="@font/abeezee"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/ys_display_medium"
         android:text="@string/Setting_Activity_Text"
-        android:textColor="@color/textcolor"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:textColor="@color/setting_screen_text_color"
+        android:textFontWeight="500"
+        android:textSize="22sp"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/arowblack"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -41,7 +40,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="61dp"
 
         android:orientation="vertical"
         android:paddingBottom="21dp"
@@ -56,71 +55,34 @@
                 android:id="@+id/switch1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/abeezee"
+                android:fontFamily="@font/ys_display_regular"
                 android:minHeight="48dp"
                 android:paddingStart="@dimen/text_view_padding_start_setting_activity_16"
                 android:text="@string/Black_Theme"
-                android:textSize="@dimen/text_size_setting_activity_text_view_20sp"
+                android:textSize="@dimen/text_size_setting_activity_text_view_16sp"
                 tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         </FrameLayout>
 
         <TextView
+            style="@style/SettingActivityTextViewStyle"
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="@dimen/text_view_padding_start_setting_activity_16"
-            android:paddingEnd="@dimen/text_view_padding_end_setting_activity_21"
-            android:fontFamily="@font/abeezee"
-            android:paddingTop="@dimen/text_viev_padding_top_21"
-            android:paddingBottom="@dimen/text_viev_padding_bottom_21"
             android:text="@string/ShareApplication"
-
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size_setting_activity_text_view_20sp"
-
-            app:drawableEndCompat="@drawable/share"
-            app:iconGravity="textEnd"
-            app:iconPadding="50dp"
-
-            app:iconTint="@color/textcolor" />
+            app:drawableEndCompat="@drawable/share"/>
 
         <TextView
+            style="@style/SettingActivityTextViewStyle"
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/abeezee"
-            android:paddingTop="@dimen/text_viev_padding_top_21"
-            android:paddingBottom="@dimen/text_viev_padding_bottom_21"
             android:text="@string/writeToSupport"
-            android:paddingStart="@dimen/text_view_padding_start_setting_activity_16"
-            android:paddingEnd="@dimen/text_view_padding_end_setting_activity_21"
-            android:textColor="@color/textcolor"
-            android:textSize="@dimen/text_size_setting_activity_text_view_20sp"
-
-            app:drawableEndCompat="@drawable/support"
-            app:iconGravity="textEnd"
-            app:iconPadding="80sp"
-            app:iconTint="@color/textcolor" />
+            app:drawableEndCompat="@drawable/support"/>
 
         <TextView
+            style="@style/SettingActivityTextViewStyle"
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/abeezee"
-            android:paddingTop="@dimen/text_viev_padding_top_21"
-            android:paddingBottom="@dimen/text_viev_padding_bottom_21"
             android:text="@string/UserAgreement"
-            android:paddingStart="@dimen/text_view_padding_start_setting_activity_16"
             android:paddingEnd="23dp"
-            android:textColor="@color/textcolor"
-            android:textSize="@dimen/text_size_setting_activity_text_view_20sp"
-
             app:drawableEndCompat="@drawable/arrovforward"
-            app:iconGravity="textEnd"
-            app:iconPadding="50dp"
-
-            app:iconTint="@color/textcolor" />
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

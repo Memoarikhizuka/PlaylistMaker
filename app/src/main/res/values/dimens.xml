@@ -11,4 +11,5 @@
     <dimen name="text_view_padding_start_setting_activity_16">16dp</dimen>
     <dimen name="text_view_padding_end_setting_activity_21">21dp</dimen>
     <dimen name="text_size_setting_activity_text_view_20sp">20sp</dimen>
+    <dimen name="text_size_setting_activity_text_view_16sp">16sp</dimen>
 </resources>
